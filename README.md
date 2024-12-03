@@ -45,6 +45,15 @@ root
    - `backend/`: Scripts that process the data and create visualizations for the app.
    - `app.py`: The main script that runs the Streamlit app, bringing together all the frontend and backend components.
 
+
+## Data Source
+
+The data used in this project is sourced from the Finnish Meteorological Institute (FMI) Open Data interface, which provides free access to a variety of datasets, including weather, sea, and air quality observations. The data is available in machine-readable format, though some technical skills and meteorological knowledge may be required to utilize it effectively. 
+
+For more details on the available datasets, visit the [FMI Open Data website](https://en.ilmatieteenlaitos.fi/open-data).
+
+For Python users, the [FMI Open Data API documentation](https://github.com/pnuu/fmiopendata) provides resources for accessing and using the data programmatically.
+
 ### Deployment
 
 The Streamlit app has been deployed and is accessible through the following link:
