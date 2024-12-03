@@ -27,8 +27,9 @@ root
 │   ├── pages/                    
 │   ├── frontend/                 
 │   ├── backend/                  
-│   ├── app.py                    
-└── README.md                     
+│   └──  app.py                    
+├── README.md   
+├── project-report.pdf                  
 └── requirements.txt              
 
 ```
@@ -44,6 +45,12 @@ root
    - `frontend/`: Scripts that handle the frontend logic, which displays website with the filters and renders visualizations to the user.
    - `backend/`: Scripts that process the data and create visualizations for the app.
    - `app.py`: The main script that runs the Streamlit app, bringing together all the frontend and backend components.
+
+
+## Project Report
+
+For more detailed information about this project, including its purpose, methodology, and results, refer to the [project-report.pdf](project-report.pdf). The report provides in-depth discussions on the motivation behind the project, data collection and preprocessing methods, and insights derived from the visualizations. It also explains how the interactive tools can be used to explore climate change impacts across Finland.
+
 
 
 ## Data Source
