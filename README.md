@@ -4,9 +4,9 @@
 
 ## Motivation
 
-When I arrived in Finland as an exchange student, one of my first questions was: “When does the snow usually fall and stay?” The response, often vague due to climate change, highlighted a broader issue: seasons are becoming increasingly unpredictable in countries like Finland, where winter has always been a defining feature. Understanding climate change goes beyond snowfall; it’s about recognizing the impacts on daily life, from shifting temperatures to varying seasonal weather patterns. These changes directly affect citizens and visitors alike, making it crucial to explore and understand the effect climate change has had in recent times.
+When I arrived in Finland as an exchange student, one of my first questions was: “When does the snow usually fall and stay?” The response was usually along the lines of “Recently because of climate change, it is hard to tell”. The responses highlighted a broader issue: seasons are becoming increasingly unpredictable in countries like Finland, where winter has always been a defining feature. Understanding climate change goes beyond snowfall; it’s about recognizing the impacts on daily life, from shifting temperatures to varying seasonal weather patterns. These changes directly affect citizens and visitors alike, making it crucial to explore and understand the effect climate change has had in recent times. 
 
-With this project, I aim to create an interactive visualization that helps users understand and explore how climate change is changing the Finnish environment, focusing on the weather patterns, snow depth, temperature shifts, and other significant climate variables over the past 60+ years.
+With this project, I aim to create an interactive visualization that helps users understand and explore how climate change is changing the Finnish environment, focusing on the weather patterns over the past 60+ years.
 
 ## Project Structure
 
