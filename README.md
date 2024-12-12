@@ -34,7 +34,7 @@ root
 
 ```
 
-**Data Retrieval (`data_retrieval`)**: This directory contains the scripts to fetch daily weather data from the Finnish Meteorological Institute's API. The data covers a 60+ year span, and while initially intended for all daily data, it was later realized that using monthly data would have been more efficient. The API is not directly used in the app, as fetching all the required historical data takes too long.
+**Data Retrieval (`data_retrieval`)**: This directory contains the scripts to fetch daily weather data from the Finnish Meteorological Institute's API. The data covers a 60+ year span, and while initially intended for all daily data, it was later realized that using monthly data would have been more efficient. The API is not directly used in the app, as fetching all the required historical data takes too long. The `raw_data` folder contains a sample of how the retrieved data originally looked like.
 
 **Preprocessing (`preprocessing`)**: This folder holds the scripts for processing the raw data. It includes steps to aggregate weather data by year, month, region, and hexagonal grid cells. The output data is used for visualizations and further analysis in the app.
 
@@ -45,6 +45,18 @@ root
    - `frontend/`: Scripts that handle the frontend logic, which displays website with the filters and renders visualizations to the user.
    - `backend/`: Scripts that process the data and create visualizations for the app.
    - `app.py`: The main script that runs the Streamlit app, bringing together all the frontend and backend components.
+
+If you want to test the app locally instead of using the deployed version there are two steps to take:
+
+1. Install dependencies:
+```
+pip install -r requirements.txt
+```
+
+2. Launch Streamlit app:
+```
+streamlit run src/app.py
+```
 
 
 ## Project Report
@@ -60,6 +72,7 @@ The data used in this project is sourced from the Finnish Meteorological Institu
 For more details on the available datasets, visit the [FMI Open Data website](https://en.ilmatieteenlaitos.fi/open-data).
 
 For Python users, the [FMI Open Data API documentation](https://github.com/pnuu/fmiopendata) provides resources for accessing and using the data programmatically.
+
 
 ### Deployment
 
