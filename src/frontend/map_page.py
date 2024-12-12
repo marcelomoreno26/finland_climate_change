@@ -53,6 +53,10 @@ class MapPage(Page):
                 """)
 
         with st.expander("Important Features"):
+
+            with st.container():
+                st.write("**NOTE:** To update the map according to defined configuration you must **always** click the 'Create Map' to render the new map.")
+
             col1, col2, col3 = st.columns(3)
 
             with col1:
@@ -201,6 +205,10 @@ class MapPage(Page):
     def Run(self):        
         _, left, right, _ = st.columns((1,2,3,1))
 
+        if "map_initialized" not in st.session_state:
+            st.session_state.map_initialized = False
+            st.session_state.fig = None 
+
         
         with left:
             for i in range(2):
@@ -222,7 +230,10 @@ class MapPage(Page):
                 config = self.GetSingleMonthComparisonVizConfig()
     
 
-            if st.button("Create Map"):
+            if st.button("Create Map") or not st.session_state.map_initialized:
+                if not st.session_state.map_initialized:
+                    st.session_state.map_initialized = True
+
                 if viz_type == "Year-Round Monthly Climate (Limited to 5 Years)":
                     fig = YearRoundMonthlyMapViz(self.observation).GetViz(self.db, config)
                 elif viz_type == "Yearly Climate":
